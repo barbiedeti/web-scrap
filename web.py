@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
+#import sqlite3
 
 page = requests.get("https://pt.wikipedia.org/wiki/Lista_de_municípios_do_Rio_de_Janeiro_por_população")
 soup = BeautifulSoup(page.text, 'html.parser')
@@ -13,7 +14,7 @@ keywords = ['Posição', 'Município', 'População\n(Estimativa 2024)[10]', 'Po
 
 mapping = {
     
-    'População\n(Estimativa 2024)[10]': 'População Estimdada 2024',
+    'População\n(Estimativa 2024)[10]': 'População Estimada 2024',
     'População\n(Censo 2022)': 'População Censo 2022',
     
 }
@@ -42,3 +43,4 @@ df.dropna(how='all', inplace=True)
 
 #print(df)
 df.to_csv('municipios_rio_de_janeiro.csv', index=False)
+#df.to_sql('municipios_rio_de_janeiro', 'sqlite:///municipios_rio_de_janeiro.db', if_exists='replace')
