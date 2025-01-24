@@ -29,7 +29,7 @@
 ## Descrição do projeto 
 
 <p align="justify">
-  Este projeto realiza web scraping da página da Wikipédia para extrair e organizar os municípios mais populosos do estado do Rio de Janeiro. O objetivo principal é criar uma tabela para visualização desses dados, proporcionando prática em scraping ético e manipulação de dados
+  ste projeto realiza o web scraping da Wikipédia para obter dados sobre os municípios mais populosos do estado do Rio de Janeiro. O objetivo é demonstrar as etapas de coleta, transformação e disponibilização desses dados aplicando Web Scraping Ético para uso em análise e visualização de dados.
 </p>
 
 ## Funcionalidades
